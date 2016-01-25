@@ -1,0 +1,11 @@
+// 此样式中用到图标合成后的尺寸
+$bigWidth: 66px;
+$bigHeight: 313px;
+
+@import './base/px2rem';
+@import "icon-share/*.png";
+$icons: sprite-map("icon-share/*.png", $spacing: 1px, $layout: vertical);
+
+.weixin {
+	@include sprite-info($icons, mask-weixin);
+}
